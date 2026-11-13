@@ -1,0 +1,154 @@
+{
+  "financial_year": "FY_2025_26",
+  "version": "1.0.0",
+  "sources": [
+    {
+      "title": "Income Tax Department of India - tax provisions and official calculator",
+      "url": "https://www.incometax.gov.in/",
+      "provision": "Sections 10(13A), 16(ia), 24(b), 80C, 80CCD(1B), 80D, 87A, 288A, 288B; First Schedule",
+      "verified_on": null,
+      "verification_status": "official source identified; statutory text and calculator comparison pending"
+    },
+    {
+      "title": "Finance Act 2025",
+      "url": "https://www.indiabudget.gov.in/",
+      "provision": "FY 2025-26 new-regime slabs, Section 87A rebate and related amendments",
+      "verified_on": null,
+      "verification_status": "official source identified; direct document retrieval blocked in this environment"
+    }
+  ],
+  "regimes": {
+    "old": {
+      "standard_deduction": 50000,
+      "slabs": [
+        {
+          "up_to": 250000,
+          "rate": "0"
+        },
+        {
+          "up_to": 500000,
+          "rate": "0.05"
+        },
+        {
+          "up_to": 1000000,
+          "rate": "0.20"
+        },
+        {
+          "up_to": null,
+          "rate": "0.30"
+        }
+      ],
+      "senior_slabs": [
+        {
+          "minimum_age": 60,
+          "exemption_limit": 300000
+        },
+        {
+          "minimum_age": 80,
+          "exemption_limit": 500000
+        }
+      ],
+      "rebate": {
+        "income_limit": 500000,
+        "maximum": 12500
+      },
+      "deductions": {
+        "80c": 150000,
+        "80ccd_1b": 50000,
+        "80d_self_regular": 25000,
+        "80d_self_senior": 50000,
+        "80d_parent_regular": 25000,
+        "80d_parent_senior": 50000,
+        "home_loan_interest": 200000
+      },
+      "surcharge": [
+        {
+          "above": 5000000,
+          "rate": "0.10"
+        },
+        {
+          "above": 10000000,
+          "rate": "0.15"
+        },
+        {
+          "above": 20000000,
+          "rate": "0.25"
+        },
+        {
+          "above": 50000000,
+          "rate": "0.37"
+        }
+      ]
+    },
+    "new": {
+      "standard_deduction": 75000,
+      "slabs": [
+        {
+          "up_to": 400000,
+          "rate": "0"
+        },
+        {
+          "up_to": 800000,
+          "rate": "0.05"
+        },
+        {
+          "up_to": 1200000,
+          "rate": "0.10"
+        },
+        {
+          "up_to": 1600000,
+          "rate": "0.15"
+        },
+        {
+          "up_to": 2000000,
+          "rate": "0.20"
+        },
+        {
+          "up_to": 2400000,
+          "rate": "0.25"
+        },
+        {
+          "up_to": null,
+          "rate": "0.30"
+        }
+      ],
+      "rebate": {
+        "income_limit": 1200000,
+        "maximum": 60000,
+        "marginal_relief": true
+      },
+      "deductions": {
+        "80c": 0,
+        "80ccd_1b": 0,
+        "80d_self_regular": 0,
+        "80d_self_senior": 0,
+        "80d_parent_regular": 0,
+        "80d_parent_senior": 0,
+        "home_loan_interest": 0
+      },
+      "surcharge": [
+        {
+          "above": 5000000,
+          "rate": "0.10"
+        },
+        {
+          "above": 10000000,
+          "rate": "0.15"
+        },
+        {
+          "above": 20000000,
+          "rate": "0.25"
+        }
+      ]
+    }
+  },
+  "hra": {
+    "metro_cap_fraction": "0.50",
+    "non_metro_cap_fraction": "0.40",
+    "rent_less_salary_fraction": "0.10"
+  },
+  "cess_rate": "0.04",
+  "round_total_income_to": 10,
+  "round_final_tax_to": 10,
+  "config_checksum": "183dd2f68437756b2d05ad132e6074d81df35243fbd56e998053fd3701e28370"
+}
